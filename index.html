@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/copy.svg" type="image/x-icon">
+  <title>Personal Password Manager</title>
+</head>
+
+<body>
+  <nav id="nav">
+    <div class="logo">PassX</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <div class="intro">
+      <h1>Password Manager</h1>
+      <p>We're thrilled to have you here. Your digital life contains a myriad of passwords, and we know how challenging
+        it can be
+        to manage them all. That's why we're here to make it easy for you.</p>
+    </div>
+
+    <div class="data">
+      <h2>Your Passwords</h2>
+      <table>
+        <tr>
+          <th>Website</th>
+          <th>Username</th>
+          <th>Password</th>
+          <th>Delete</th>
+        </tr>
+        <tr>
+          <td>GitHub</td>
+          <td>notDevSec</td>
+          <td>password</td>
+          <td><button>Delete</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="add-section">
+      <h2>Add a Password</h2>
+      <form action="/submit" method="post">
+        <!-- * Text Input for Website -->
+        <label for="website">Website:</label>
+        <input type="text" id="website" name="website" required> <br> <br>
+
+        <!-- * Text Input for Username -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required> <br> <br>
+
+        <!-- * Text Input for Password -->
+        <label for="password">Password:</label>
+        <input type=" password" id="password" name="password" required> <br>
+        <button class="btn" type="submit">Submit</button>
+      </form>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
