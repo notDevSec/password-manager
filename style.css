@@ -58,8 +58,13 @@ ul li a {
   margin-bottom: 25px;
 }
 
-.data table {
+.data table,
+td,
+th,
+tr {
   border: 2px solid black;
+  border-collapse: collapse;
+  padding: 5px 10px;
 }
 
 /*! ADD */
